@@ -11,10 +11,13 @@ async function getUserData() {
 export default async function Home() {
   const userData = await getUserData();
   return (
-    <div className="flex flex-col justify-center items-center h-screen border-2 p-3 border-black">
-      hi there
-      <div className="border-2 p-2 border-black">{userData.name}</div>
-      <div className="border-2 p-2 border-black">{userData.email}</div>
+    <div className="flex flex-col justify-center h-screen">
+      <div className="flex justify-center">
+        <div className="border p-8 rounded">
+          <div>Name: {userData?.name}</div>
+          {userData?.email}
+        </div>
+      </div>
     </div>
   );
 }
