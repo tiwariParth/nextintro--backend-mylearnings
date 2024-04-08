@@ -4,3 +4,4 @@ export function GET() {
     email: "johndoe@example.com ",
   });
 }
+
