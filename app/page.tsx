@@ -1,7 +1,7 @@
 import axios from "axios";
-import Image from "next/image";
 
 async function getUserData() {
+  await new Promise((r) => setTimeout(r, 1000));
   const res = await axios.get(
     "https://week-13-offline.kirattechnologies.workers.dev/api/v1/user/details"
   );
