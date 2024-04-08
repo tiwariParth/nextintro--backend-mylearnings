@@ -3,14 +3,6 @@ import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
 
-export async function GET() {
-    const user = await prisma.user.findFirst()
-  return NextResponse.json({
-    name: "sadfs",
-    email: user?.username,
-  });
-}
-
 export async function POST(req: NextRequest) {
   const body = await req.json();
   console.log(body);
