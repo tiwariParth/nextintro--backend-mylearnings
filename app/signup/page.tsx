@@ -1,6 +1,6 @@
 import { Signup } from "../components/SignUp";
 
-export default function () {
+export default async function () {
   return (
     <div>
       <Signup />
