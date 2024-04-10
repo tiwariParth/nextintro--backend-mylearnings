@@ -1,8 +1,7 @@
-import { PrismaClient } from "@prisma/client";
+import client from "@/db/index";
 
-const prisma = new PrismaClient();
 async function getUserData() {
-  const user = await prisma.user.findFirst();
+  const user = await client.user.findFirst();
   return {
     email: user?.username,
     name: "sadfs",
