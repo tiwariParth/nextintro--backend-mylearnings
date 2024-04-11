@@ -46,7 +46,7 @@ export function Signup() {
               >
                 Sign in
               </button>
-            </div>
+            </div> 
           </div>
         </a>
       </div>
